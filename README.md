@@ -41,6 +41,130 @@ Keep model parachutes small enough that the inflated canopy does not occupy too 
 - canopy diameter: `4 in to 6 in`
 - absolute upper end: around `7 in to 8 in`, depending on shape
 
+## Schematics
+
+These are text schematics for layout and cutting. They are not meant to replace shop drawings, but they are accurate enough to build the tunnel and keep the module sizes consistent.
+
+### Overall Side View
+
+```text
+                    OPEN TOP / EXHAUST
+                 ┌──────────────────────┐
+                 │       DIFFUSER       │
+                 │   16x16 to 20x20     │   18-24 in tall
+                 │      expanding       │
+                 └──────────┬───────────┘
+                            │
+                 ┌──────────┴───────────┐
+                 │     TEST SECTION     │
+                 │       16x16          │   24 in tall
+                 │    clear windows     │
+                 │    parachute here    │
+                 └──────────┬───────────┘
+                            │
+                 ┌──────────┴───────────┐
+                 │     CONTRACTION      │
+                 │   20x20 to 16x16     │   18 in tall
+                 │    gently tapered    │
+                 └──────────┬───────────┘
+                            │
+                 ┌──────────┴───────────┐
+                 │  HONEYCOMB + SCREEN  │   4-6 in honeycomb
+                 │  2-3 screen layers   │
+                 └──────────┬───────────┘
+                            │
+                 ┌──────────┴───────────┐
+                 │       PLENUM         │
+                 │        20x20         │   20 in tall
+                 │   sealed settling    │
+                 └──────────┬───────────┘
+                            │
+                 ┌──────────┴───────────┐
+                 │       BOX FAN        │
+                 │        20 in         │
+                 │     blowing up       │
+                 └──────────────────────┘
+```
+
+### Front View of Test Section
+
+```text
+                 16 in inside width
+            ┌──────────────────────────┐
+            │            o             │  <- top-center eye screw
+            │            |             │
+            │           / \            │
+            │         ./   \.          │
+            │        /       \         │
+            │        \       /         │  <- inflated canopy
+            │         \.___./          │
+            │            |             │
+            │            |             │
+            │           [ ]            │  <- payload washers / sinkers
+            │                          │
+            └──────────────────────────┘
+                    24 in inside height
+```
+
+### Top View of Tunnel Sections
+
+```text
+PLENUM / SCREEN / HONEYCOMB PLAN VIEW
+
+       outside frame approx 20x20 in
+     ┌──────────────────────────────┐
+     │[][][][][][][][][][][][][][][]│
+     │[][][][][][][][][][][][][][][]│  <- honeycomb cells
+     │[][][][][][][][][][][][][][][]│
+     └──────────────────────────────┘
+
+TEST SECTION PLAN VIEW
+
+       inside clear area 16x16 in
+     ┌──────────────────────────────┐
+     │                              │
+     │           parachute          │
+     │           centerline         │
+     │                              │
+     └──────────────────────────────┘
+```
+
+### Contraction Panels
+
+Build the contraction from four tapered panels.
+
+```text
+SIDE PANEL OF CONTRACTION
+
+      18 in length
+   <------------------>
+
+   20 in end       16 in end
+   ┌──────────┐    ┌────────┐
+   │          └────┘        │
+   │                        │
+   └────────────────────────┘
+
+The taper is gentle. Mirror this geometry on opposite sides.
+```
+
+### Diffuser Panels
+
+The diffuser is the reverse of the contraction.
+
+```text
+SIDE PANEL OF DIFFUSER
+
+      18-24 in length
+   <--------------------->
+
+   16 in end       20 in end
+   ┌────────┐      ┌──────────┐
+   │        └──────┘          │
+   │                          │
+   └──────────────────────────┘
+```
+
 ## Shopping List
 
 Use the "Search / Example" column as the search phrase on the retailer site if local stock differs.
@@ -153,6 +277,44 @@ Cut panels for:
 - diffuser walls
 - at least 2 clear window panels for the test section
 - 1 removable access panel if possible
+
+### Example Panel Dimensions
+
+Use these as starting dimensions if you are building with thin sheet material over a `1x2` frame.
+
+```text
+PLENUM PANELS
+- 4 side panels:       20 in x 20 in
+
+TEST SECTION PANELS
+- 2 clear side panels: 24 in x 16 in
+- 1 rear panel:        24 in x 16 in
+- 1 front access side: 24 in x 16 in
+
+CONTRACTION PANELS
+- 2 opposing panels:   18 in long, tapering 20 in to 16 in
+- 2 opposing panels:   18 in long, tapering 20 in to 16 in
+
+DIFFUSER PANELS
+- 2 opposing panels:   18-24 in long, tapering 16 in to 20 in
+- 2 opposing panels:   18-24 in long, tapering 16 in to 20 in
+```
+
+### Frame Layout Concept
+
+```text
+TEST SECTION FRAME
+
+Top frame:     16 x 16 in square
+Bottom frame:  16 x 16 in square
+Verticals:     4 pieces at 24 in
+
+PLENUM FRAME
+
+Top frame:     20 x 20 in square
+Bottom frame:  20 x 20 in square
+Verticals:     4 pieces at 20 in
+```
 
 ## Detailed Build Instructions
 
@@ -275,6 +437,55 @@ For each shape, build at least 3 sizes:
 Keep the suspension line material and payload attachment method the same across all tests.
 
 ## Parachute Pattern Instructions
+
+### Pattern Schematic Reference
+
+These simple plan-view sketches are enough to lay out the first set of canopies.
+
+```text
+1. FLAT ROUND
+
+          _________
+      .-''         ''-.
+    .'                 '.
+   /                     \
+  |           +           |   + = center mark
+   \                     /
+    '.                 .'
+      '-.___________.-'
+
+2. FLAT ROUND WITH SPILL HOLE
+
+          _________
+      .-''   ___   ''-.
+    .'      /   \      '.
+   /       |  +  |       \
+  |         \___/         |
+   \                       /
+    '.                   .'
+      '-._____________.-'
+
+3. CONICAL CANOPY PATTERN
+
+          _________
+      .-''         ''-.
+    .'               __'.
+   /              _.-'   \
+  |          _..-'        |   Cut out a wedge,
+   \     _.-'            /    then join cut edges
+    '._-'              .'     to form the cone.
+       '-._________.-'
+
+4. CRUCIFORM
+
+             ┌───────┐
+             │       │
+     ┌───────┼───────┼───────┐
+     │       │   +   │       │
+     └───────┼───────┼───────┘
+             │       │
+             └───────┘
+```
 
 ### A. Flat Circular Canopy
 
@@ -572,4 +783,3 @@ If you want the fastest path to a working setup, do this in order:
 8. start testing before adding upgrades
 
 This gets you useful results sooner than trying to perfect every tunnel detail up front.
-
